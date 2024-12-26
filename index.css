@@ -1,0 +1,99 @@
+ /* General Styling */
+ body {
+    font-family: 'Red Hat Text', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(20, 50%, 98%);
+    color: hsl(14, 65%, 9%);
+    line-height: 1.6;
+  }
+
+  header {
+    background-color: hsl(13, 31%, 94%);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu-item {
+    background-color: hsl(13, 31%, 94%);
+    border: 1px solid hsl(14, 25%, 72%);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .menu-item img {
+    max-width: 80px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+  }
+
+  .menu-item strong {
+    font-size: 16px;
+    color: hsl(14, 65%, 9%);
+  }
+
+  .menu-item span {
+    font-size: 14px;
+    color: hsl(7, 20%, 60%);
+  }
+
+  button {
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: auto;
+  }
+
+  button:hover {
+    background-color: hsl(14, 86%, 38%);
+  }
+
+  .cart {
+    background-color: hsl(13, 31%, 94%);
+    border: 1px solid hsl(14, 25%, 72%);
+    border-radius: 8px;
+    padding: 20px;
+  }
+
+  .cart h2 {
+    font-size: 18px;
+    color: hsl(14, 65%, 9%);
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(12, 20%, 44%);
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+
+  .attribution a:hover {
+    text-decoration: underline;
+  }
