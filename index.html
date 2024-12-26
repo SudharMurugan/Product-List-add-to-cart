@@ -1,143 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Product List with Cart</title>
-  <link rel="stylesheet" href="index.css">
-  
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;600;700&display=swap" rel="stylesheet">
-  
-  
-</head>
-<body>
-  <header>
-    Desserts
-  </header>
-  <main>
-    <section>
-      <ul>
-        <li class="menu-item">
-          <img src="./assets/images/image-waffle-desktop.jpg" alt="Waffle with Berries">
-          <div>
-            <strong>Waffle with Berries</strong><br>
-            <span>Waffle</span><br>
-            <span>$6.50</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="container__desserts">
+        <h1 class="desserts__title">Desserts</h1>
+        <ul class="desserts__list"></ul>
+      </section>
+      <section class="container__cart">
+        <h1 class="cart__title">
+          Your Cart
+          <span class="quantity"></span>
+        </h1>
+        <div class="cart__body empty active">
+          <div class="empty__image">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="" />
           </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="Vanilla Bean Crème Brûlée">
-          <div>
-            <strong>Vanilla Bean Crème Brûlée</strong><br>
-            <span>Crème Brûlée</span><br>
-            <span>$7.00</span>
+          <p class="empty__text">Your added items will appear here</p>
+        </div>
+        <div class="cart__body full">
+          <ul class="cart__list"></ul>
+          <div class="order-info">
+            <span class="order-total">Order Total</span>
+            <span class="order-price"></span>
           </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-macaron-desktop.jpg" alt="Macaron Mix of Five">
-          <div>
-            <strong>Macaron Mix of Five</strong><br>
-            <span>Macaron</span><br>
-            <span>$8.00</span>
+          <div class="note">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <p class="note-text">
+              This is a
+              <span>carbon-neutral</span>
+              delivery
+            </p>
           </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-waffle-desktop.jpg" alt="Waffle with Berries">
-          <div>
-            <strong>Waffle with Berries</strong><br>
-            <span>Waffle</span><br>
-            <span>$6.50</span>
-          </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-creme-brulee-desktop.jpg" alt="Vanilla Bean Crème Brûlée">
-          <div>
-            <strong>Vanilla Bean Crème Brûlée</strong><br>
-            <span>Crème Brûlée</span><br>
-            <span>$7.00</span>
-          </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-macaron-desktop.jpg" alt="Macaron Mix of Five">
-          <div>
-            <strong>Macaron Mix of Five</strong><br>
-            <span>Macaron</span><br>
-            <span>$8.00</span>
-          </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-tiramisu-desktop.jpg" alt="Classic Tiramisu">
-          <div>
-            <strong>Classic Tiramisu</strong><br>
-            <span>Tiramisu</span><br>
-            <span>$5.50</span>
-          </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-baklava-desktop.jpg" alt="Pistachio Baklava">
-          <div>
-            <strong>Pistachio Baklava</strong><br>
-            <span>Baklava</span><br>
-            <span>$4.00</span>
-          </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-meringue-desktop.jpg" alt="Lemon Meringue Pie">
-          <div>
-            <strong>Lemon Meringue Pie</strong><br>
-            <span>Pie</span><br>
-            <span>$5.00</span>
-          </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-cake-desktop.jpg" alt="Red Velvet Cake">
-          <div>
-            <strong>Red Velvet Cake</strong><br>
-            <span>Cake</span><br>
-            <span>$4.50</span>
-          </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-brownie-desktop.jpg" alt="Salted Caramel Brownie">
-          <div>
-            <strong>Salted Caramel Brownie</strong><br>
-            <span>Brownie</span><br>
-            <span>$4.50</span>
-          </div>
-          <button>Add to Cart</button>
-        </li>
-        <li class="menu-item">
-          <img src="./assets/images/image-panna-cotta-desktop.jpg" alt="Vanilla Panna Cotta">
-          <div>
-            <strong>Vanilla Panna Cotta</strong><br>
-            <span>Panna Cotta</span><br>
-            <span>$6.50</span>
-          </div>
-          <button>Add to Cart</button>
-      </ul>
-    </section>
-    <section class="cart">
-      <h2>Your Cart (<span id="cart-quantity">0</span>)</h2>
-      <p>Your added items will appear here</p>
-    </section>
-  </main>
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  </footer>
-</body>
+          <button class="confirm-order">Confirm Order</button>
+        </div>
+      </section>
+      <section class="container__confirm">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+        <h1 class="confirm__title">Order Confirmed</h1>
+        <p class="confirm__text">We hope you enjoy tour food</p>
+        <ul class="confirm__list"></ul>
+        <div class="order-info">
+          <span class="order-total">Order Total</span>
+          <span class="order-price">0</span>
+        </div>
+        <button class="new-order">Start New Order</button>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>
